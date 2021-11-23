@@ -5,7 +5,8 @@
     [{assign var="blFullwidth" value=$oViewConf->getViewThemeParam('blFullwidthLayout')}]
 
     <header id="header">
-
+        //its needed to show messages on the top of the pages
+        [{block name="layout_header_shop_outage"}] [{/block}]
         <div class="[{if $blFullwidth}]container[{else}]container-fluid[{/if}]">
 
             <div class="header-box">
